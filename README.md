@@ -1,8 +1,6 @@
-# assignment1-danielbs93
+# assignment1
 
 assignment1-danielbs93 created by GitHub Classroom
-
-Name: Daniel Ben-Simon
 
 ID: 204554166
 
