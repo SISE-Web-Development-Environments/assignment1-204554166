@@ -2,37 +2,74 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+<style>
+	body {
+		background-image:url('imgs/src1.jpg');
+		background-size: cover;
+                background-attachment: fixed;
+	} /* backround img for the page */
+	a {font-size:42px;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="fb-root" align=center></div>
+<script async defer crossorigin="anonymous" 
+	src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0">
+</script>
 <div id="menu">
+<ul>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
 <li><a href="#like">Like</a></li>
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<li style="float:right"><a href="#contact">Contact Me</a></li>
+</ul>
 </div>
-		  
+<hr>
+</head>
+<body>
 <section id="about" class="section">
 <br/>
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>About me</span>
+  </div>
+  <div class="inner">
+    <span>About me</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
+<p> 
+<strong>
+My name is Daniel Ben-Simon, I'm 27 years old and I was born in Israel.
+I'm third year student for Software & Information Systems Engineering,
+Ben Gurion University of the Negev.
+"Imagination is more important than knowledge" ,Albert Einstein once said,
+the power of imagination is the best tool our brain has, you can use it
+whenever you like, you can use it however you like and the more wild
+you imagin - the best picture is created in your mind. Why is it so helpfull
+for us? Remembering and Creating! our brain is a muscle and imagination is
+the gym for it.
+My best skills I have aquired so far and most interesting for me are design patterns, 
+OOP, Java development, algorithms and AI.
+This course, in my opnion, is one of the best courses the department can offer,
+learning the basics and more about full stack developers, front-end&back-end dev,
+along with the HTML, CSS, JS, DOM, Node JS, VUE languages.
+Mentioned before about the imagination subject, gym, is my best way to realese 
+my self, keeping my head between my hears, more generally - sport for my health,
+espacially when the quality of my works and studies is in a way of sitting infront
+of the computer.
+That was me in a glimpse, enjoy my site :)
+</strong>
+</p>
 <br/>
 <br/>
 </section>
@@ -42,20 +79,28 @@ about me
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>Photos</span>
+  </div>
+  <div class="inner">
+    <span>Photos</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
+/* Enables photos to run from side to side*/
+<marquee scrollamount="20"
+direction="left"
+behavior="alternate">
+<img src="imgs/myPhoto1.jpg" alt="photo1" width="700" height="500" />
+<img src="imgs/myPhoto2.jpg" alt="photo2" width="700" height="500" />
+<img src="imgs/myPhoto3.jpg" alt="photo3" width="700" height="500" />
+<img src="imgs/myPhoto4.jpg" alt="photo4" width="700" height="500" />
+<img src="imgs/myPhoto5.jpg" alt="photo5" width="700" height="500" />
+</marquee>
 <br/>
 <br/>
 </section>
@@ -65,20 +110,25 @@ my photos
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>My Playlist</span>
+  </div>
+  <div class="inner">
+    <span>My Playlist</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
+<h1 align=center>
+<iframe width="700" height="500" 
+	src="https://www.youtube.com/embed/videoseries?list=RDY983eF3T_Zo" 
+	frameborder="0" allow="autoplay; 
+	encrypted-media" allowfullscreen>
+</iframe>
+</h1>
 <br/>
 <br/>
 </section>
@@ -88,21 +138,27 @@ my playlist
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>Give Me A Like</span>
+  </div>
+  <div class="inner">
+    <span>Give Me A Like</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
+<h1 align=center >
+<div id="like-button" class="fb-like" 
+	data-href="https://sise-web-development-environments.github.io/assignment1-danielbs93/" 
+	data-width="300" data-layout="standard" 
+	data-action="like" 
+	data-size="large" 
+	data-share="true">
+</div>
+</h1>
 <br/>
 </section>
 
@@ -111,22 +167,23 @@ give me a like
 <br/>
 <br/>
 <br/>
+<hr>
+<h1 align=center >
+<div class="box">
+  <div class="inner">
+    <span>Scan Me</span>
+  </div>
+  <div class="inner">
+    <span>Scan Me</span>
+  </div>
+</div>
+</h1>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+<h1 align=center >
+<img src="imgs/QRcode.JPG" alt="qr code" width="300" height="300" />
+</h1>
 </section>
 
 <section id="spa" class="section">
@@ -134,20 +191,41 @@ scan my code
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>Q&A</span>
+  </div>
+  <div class="inner">
+    <span>Q&A</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
+<p>
+<strong>
+Difference between Web 1.0, Web 2.0 and Web 3.0:<br>
+The first most biggest differences between this 3 versions of the web, the web 1.0 was mostly read-only environment while the web 2.0 was wildly read-write, but the biggest next step was at the web 3.0 version where the environment is portable and personal.
+The second difference between these versions is their purposes meaning the web 1.0 mostly can hadle only home pages, the web 2.0 contained more blogs and wikis, and now at the web 3.0 version is dealing with live-streams.
+The third but not last of differences between the web versions is dealing about advertisments, web 1.0 has never had advertising it was banned, the web 2.0 contained only interactive advertising, and the web 3.0 behavioural advertising.
+<br>
+Lets take an example of searching content in different web versions:<br>
+web 1.0:<br>
+1. The user enter his web browser.<br>
+2. The user type the exact web URL into the web address bar.<br>
+3. The user search the content he desired in the specific website.<br>
+As a result -> only if the user know the website url he will be able to search the content, moreover, the information he need could not be in the website he entered.
+<br>
+web 3.0:<br>
+1. the user enter his web browser<br>
+2. the user search the information he need in the URL bar<br>
+3. the info wil be introduced to hi as a list <br>
+4. the user will choose the best url that hold the information.<br>
+As a result -> the user can choose which website gives him the best info he needed as he scan the list of URLs that came as a result of his search query.
+<br>
+</strong>
+</p>
 <br/>
 <br/>
 </section>
@@ -157,23 +235,62 @@ ans
 <br/>
 <br/>
 <br/>
+<hr>
+<div class="box">
+  <div class="inner">
+    <span>Mail Me</span>
+  </div>
+  <div class="inner">
+    <span>Mail Me</span>
+  </div>
+</div>
+<hr>
 <br/>
 <br/>
+<h1 align="center">
+<form action="mailto:bensimod@post.bgu.ac.il" method="post" enctype="text/plain">
+        Name:   <br>
+        	<input type="text" name="name">
+		<br>
+        E-mail: <br>
+        	<input type="text" name="mail">
+		<br>
+        Comment:<br>
+                <textarea contenteditable="true" id="msg" rows="4" cols="70" type="text" name="msg" >
+		</textarea>
+	<br>
+	<div id="emojies" >
+	     <a id="s1" title="smiley1" href="#1"  >&#128512;</a>       
+	     <a id="s2" title="smiley2" href="#1" >&#128513;</a>
+	     <a id="s3" title="smiley3" href="#1" >&#128516;</a>
+	     <a id="s4" title="smiley4" href="#1" >&#128521;</a>
+	     <a id="s5" title="smiley5" href="#1" >&#129321;</a>
+	     <a id="s6" title="smiley6" href="#1" >&#128076;</a>
+	     <a id="s7" title="smiley7" href="#1" >&#9996;</a>
+	     <a id="s8" title="smiley8" href="#1" >&#128077;</a>
+	</div>
+	<br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+</form>
+</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
 <br/>
 <br/>
 <br/>
 </section>
+<footer>
+        Contact me also at:<br>
+        <a href="https://github.com/danielbs93" target="_blank"><i class="fa fa-github"></i></a>
+	<a href="https://www.linkedin.com/in/daniel-ben-simon-87a55918b/" target="_blank" ><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/daniel_ben.simon/" target="_blank" ><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/daniel.ben.simon93" ><i class="fa fa-facebook"></i></a>
+        <a href="mailto:danielbs093@gmail.com" ><i class="fa fa-envelope"></i></a>
+	<br>
+</footer>
+<span class=credits>
+      Design by Daniel Ben-Simon ©
+</span>
 
 
 <script type="text/javascript">
@@ -189,5 +306,14 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script>
+$(function() { 
+    $('#emojies a').click(function() {
+        $('#msg').val($('#msg').val() + $(this).html();
+    });
+});
+</script>
+
 </body>
 </html>
